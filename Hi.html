@@ -4,23 +4,207 @@
 <title>
 Test
 </title>
+<style>
+@media (min-width: 500px) {
+  h1::before {
+    content: "Non Mobile"
+  }
+}
+@media (max-width:499px) {
+  h1::before {
+    content: "Mobile"
+  }
+}
+h1::selection {
+  color: blue;
+  background-color: pink;
+}
+ul::selection {
+  color: blue;
+  background-color: pink;
+}
+ol::selection {
+  color: blue;
+  background-color: pink;
+}
+li::selection {
+  color: blue;
+  background-color: pink;
+}
+a::before {
+  content: "\21d2"
+}
+li > button:hover {
+  background-color: orange;
+}
+h1 {
+  font-style: italic;
+  font-weight: bold;
+}
+h1, h2 {
+  text-align: center;
+}
+li {
+  margin:5px;
+}
+table {
+  margin:50px;
+  border: 5px solid black;
+}
+th, td {
+    border:3px solid blue;
+    padding:10px;
+}
+th {
+  background-color: red;
+}
+#text {
+  font-family: fantasy;
+}
+#Fill {
+  font-style: oblique;
+}
+#chose {
+  font-stretch: expanded;
+}
+div {
+  background-color: Green;
+}
+button {
+  background-color: Yellow;
+}
+#content {
+  display: flex;
+  flex-wrap: wrap;
+}
+#content > p {
+  background-color: springgreen;
+  margin: 20px;
+  padding: 20px;
+  width: 200px;
+}
+</style>
 </head>
 <body>
-<h1>
-This is an Test WebSite.
-A test of AN NOOB.
-what is web programming?
-</h1>
-Branching
-.
-List
+  <h1>
+  </h1>
+<h2>
+Things About School During Quarantine Due To Covid-19.
+</h2>
 <ul>
-  <li> La LA la</li>
-  <li> he He he </li>
-  <li> yepide </li>
+  <li><button><a href="#Fill">Form Fill Up</a></button></li>
+  <li><a href="#chose">Class</a></li>
+  <li><a href="#sy">Syllabus</a></li>
+<div id="text">
+  The rules of our school have been modified.
+  Please have a look.
+</div>
+Not allowed
+<ul>
+  <li>Corona</li>
+  <li>Covid</li>
+  <li>Hanta</li>
+  <li>Gathering</li>
+  <li>Hand Shaking</li>
+  <li>Breaking Rules</li>
+</ul>
+<p>
+</p>
+Allowed
 <ol>
-  <li> 2 </li>
-  <li> 3 </li>
-  <li> 1 </li>
+  <li>Mask</li>
+  <li>Social Distancing</li>
+  <li>Sanitiser</li>
+  <li>Phone</li>
+  <li>Dancing</li>
+  <li>Jumping</li>
+  <li>Enjoying</li>
+</ol>
+           <table>
+              <tr>
+                <th>Sl.no</th>
+                <th>Name</th>
+                <th>RollNo</th>
+                <th>Class</th>
+                <th>Section</th>
+                <th>School</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Alu</td>
+                <td>00001</td>
+                <td>10</td>
+                <td>A</td>
+                <td>St.Xavier's</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Balu</td>
+                <td>00011</td>
+                <td>10</td>
+                <td>A</td>
+                <td>St.Xavier's</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Chalu</td>
+                <td>00111</td>
+                <td>10</td>
+                <td>A</td>
+                <td>St.Xavier's</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Daru</td>
+                <td>01111</td>
+                <td>10</td>
+                <td>A</td>
+                <td>St.Xavier's</td>
+              </tr>
+              </table>
+              <form>
+                <div id="Fill">
+                <input name="name" type="text" placeholder="FirstName">
+                <input name="name" type="text" placeholder="MiddleName(if any)">
+                <input name="name" type="text" placeholder="Surname">
+                <input name="pasword" type="password" placeholder="Pasword">
+              </div>
+
+              <div id="chose">
+                Class?
+                <input name="class" type="radio" value="1"> One
+                <input name="class" type="radio" value="2"> Two
+                <input name="class" type="radio" value="3"> Three
+                <input name="class" type="radio" value="4"> Four
+                <input name="class" type="radio" value="5"> Five
+                <input name="class" type="radio" value="6"> Six
+                <input name="class" type="radio" value="7"> Seven
+                <input name="class" type="radio" value="8"> Eight
+                <input name="class" type="radio" value="9"> Nine
+                <input name="class" type="radio" value="10"> Ten
+                <input name="class" type="radio" value="11"> Eleven
+                <input name="class" type="radio" value="12"> Tweleve
+              </div>
+              </form>
+                <button>Submit<=This Button Does Nothing Yet</button>
+                <h3 id="sy">
+                  Syllabus For Nerist
+                </h3>
+                <div id="content">
+                <p>
+                  Measurement in Science and Technology: Measurements and measurement systems; Historical developments in measurement science; the modern measurement system; The international system of units (SI); Maintenance of standards of measurements; Multiples and fractions; Indian national standards of measurements.
+                </p>
+                <p>Structure of Atom: Fundamental Experiments and discharge tube and the discovery of the electron; Canal rays or positive rays; X-rays and radioactivity; Atomic nucleus; Structure of atom; Discovery of the neutron; Atomic Number and atomic mass; isotopes.
+                </p>
+                <p>Motion: Motion of living and non-living objects; Distance and displacement; Uniform and Non Uniform motion, Velocity; Non uniform motion and acceleration; Graphs and their uses; Uniform circular motion.
+                </p>
+                <p>Gravitation: Universal law of gravitation; Motion of particles under gravity; Motion of a projectile, Mass and weight; Geotropism.</p>
+                <p>Work, Energy and Power: Work, work done when the force is not along the direction of motion; Energy; Power, Transformation of energy, Conservation of energy.</p>
+                <p>Heat: Heat and temperature; Thermal equilibrium; Mercury thermometer, Heat as a form of energy, Effects of Heat; Changes of state.</p>
+                <p>Wave motion and sound: Simple Pendulum, Wave motion; Transverse and longitudinal waves; Graphical representation of simple harmonic waves characteristic of harmonic waves; Relation between wave velocity, frequency and wave length for a periodic ; Nature and propagation of sound; speed of sound; Range of hearing in humans, Reflection of sound, practical applications of reflected sound; Echoes; Sonar and Application of Ultrasound.</p>
+                <p>Light reflection and refraction: Nature of light; reflection of light by mirrors-by plane mirror, spherical mirrors, new Cartesian sign convention for reflection by spherical mirrors and derivation of mirror formula, magnification; Refraction of light-the refractive Index, reflection through a rectangular glass slab, refraction by spherical lenses, sign convention with spherical lenses - Lens formula, power of a lens, total internal reflection, some optical phenomena in nature; dispersion of white light by a glass prism; color of objects-primary colours of light and pigments.</p>
+                <p>Optical Instruments: The human eye; defects of vision and their correction; microscope and the astronomical telescope.</p>
+                <p>Electricity, its heating and chemical effects: Electric charges and its properties; conductors and Insulators; electric current-charges in motion; electric potential and potential difference; circuit diagram; Ohms law-resistance, resistivity, resistors in series and in parallel; heating effect of electric current-electric energy and electric power.</p>
+              </div>
 </body>
 </html>
